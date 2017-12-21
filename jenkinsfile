@@ -1,0 +1,12 @@
+pipeline {
+	agent any
+	stages {
+		stage('pre-reqs') {
+			sh 'echo "No Pre-requisites..."'
+		}
+		stage('build') {
+			sh 'echo "Nothing to build..."'
+		}
+		stage('') {}
+	}
+}
