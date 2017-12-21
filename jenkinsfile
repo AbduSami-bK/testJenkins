@@ -2,13 +2,19 @@ pipeline {
 	agent any
 	stages {
 		stage('pre-reqs') {
-			echo "No Pre-requisites..."
+			steps {
+				sh 'echo "No Pre-requisites..."'
+			}
 		}
 		stage('build') {
-			echo "Nothing to build..."
+			steps {
+				sh 'echo "Nothing to build..."'
+			}
 		}
 		stage('Run') {
-			./test_script.sh first_argument
+			steps {
+				sh './test_script.sh first_argument'
+			}
 		}
 	}
 }
