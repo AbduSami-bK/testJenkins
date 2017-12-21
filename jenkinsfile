@@ -13,7 +13,7 @@ pipeline {
 		}
 		stage('Run') {
 			steps {
-				sh './test_script.sh first_argument'
+				sh 'echo "input" | ./test_script.sh first_argument'
 			}
 		}
 	}
